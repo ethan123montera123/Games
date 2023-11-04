@@ -89,7 +89,6 @@ ul {
 .btn:hover {
     opacity: 0.5;
     transition: 0.3s ease-in;
-    border-radius: 20px;
 }
 
 .dark {
@@ -127,6 +126,7 @@ ul {
     margin-top: 20px;
     color: black;
     background-color: white;
+    border-radius: 20px;
 
 }
 
