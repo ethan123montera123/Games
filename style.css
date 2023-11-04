@@ -115,6 +115,7 @@ ul {
     margin-bottom: 20px;
 }
 
+
 .showcase h2,
 .showcase p {
     margin-bottom: 10px;
@@ -122,6 +123,8 @@ ul {
 
 .showcase .btn {
     margin-top: 20px;
+    color: black;
+    background-color: white;
 }
 
 
