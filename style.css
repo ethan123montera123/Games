@@ -87,8 +87,7 @@ ul {
 }
 
 .btn:hover {
-    color: black;
-    background-color: white;
+    opacity: 0.5;
     transition: 0.3s ease-in;
 }
 
@@ -128,7 +127,6 @@ ul {
     color: black;
     background-color: white;
     border-radius: 20px;
-
 }
 
 
