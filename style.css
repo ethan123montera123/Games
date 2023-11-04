@@ -88,6 +88,7 @@ ul {
 
 .btn:hover {
     opacity: 0.9;
+    transition: 0.3s ease-in;
 }
 
 .dark {
@@ -127,6 +128,7 @@ ul {
     background-color: white;
     border-radius: 20px;
 }
+
 
 
 /* Home cards */
