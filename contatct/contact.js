@@ -45,3 +45,11 @@ document.getElementById('form')
                 alert(JSON.stringify(err));
             });
     });
+
+    document.querySelector('#contact-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        e.target.elements.first.value = '';
+        e.target.elements.last.value = '';
+        e.target.elements.email.value = '';
+        e.target.elements.message.value = '';
+    });
