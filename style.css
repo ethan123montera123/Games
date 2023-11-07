@@ -167,7 +167,7 @@ ul {
 .xbox {
     width: 100%;
     height: 350px;
-    background: url('/images/AD_bg.png') no-repeat center center/cover;
+    background: url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2Vic2l0ZXxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center/cover;
     margin-bottom: 20px;
 }
 
