@@ -1,38 +1,47 @@
-$.validator.addMethod("mailcheck", function (a) {
-    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-      a
-    );
-  });
-  $("#form_val").validate({
-    rules: {
-      email: {
-        required: true,
-        mailcheck: true
-      },
-      name: {
-        required: true
-      },
-      subject: {
-        required: true
-      },
-      message: {
-        required: true
-      }
-    },
-    messages: {
-      email: {
-        required: "Please enter a email address",
-        email: "Please enter a valid email address"
-      },
-      name: {
-        required: "Please enter your name"
-      },
-      subject: {
-        required: "Please enter a subject"
-      },
-      message: {
-        required: "Please enter a message"
-      }
-    }
-  });
-  
+function sendMail() {
+    var params = {
+        first: document.getElementById("first").value,
+        email: document.getElementById("email").value,
+        last: document.getElementById("last").value,
+        message: document.getElementById("message").value,
+    };
+
+    const serviceID = "service_9i6b9do";
+    const templateID = "template_ygywmxh";
+
+    emailjs
+        .send(serviceID, templateID, params)
+        .then((res) => {
+            document.getElementById("first").value = "";
+            document.getElementById("last").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("message").value = "";
+
+            console.log(res);
+            alert("Your Message was Sent Successfully");
+        })
+
+    .catch((err) => console.log(err));
+
+}
+
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+    .addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        btn.value = 'Sending...';
+
+        const serviceID = 'service_9i6b9do';
+        const templateID = 'template_ygywmxh';
+
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                btn.value = 'Send Email';
+                alert('Sent!');
+            }, (err) => {
+                btn.value = 'Send Email';
+                alert(JSON.stringify(err));
+            });
+    });
