@@ -16,31 +16,57 @@
 </script>
 </head>
 <body>
-	<nav class="navbar navbar-default" role="navigation">
-		<div class="container-fluid">
-		  <!-- Brand and toggle get grouped for better mobile display -->
+	<nav class="navbar">
+		<div class="container">
+	  
 		  <div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-			  <span class="sr-only">Toggle navigation</span>
-			  <span class="icon-bar"></span>
-			  <span class="icon-bar"></span>
-			  <span class="icon-bar"></span>
+			<button class="navbar-toggler" data-toggle="open-navbar1">
+			  <span></span>
+			  <span></span>
+			  <span></span>
 			</button>
-			<a class="navbar-brand" href="#">Brand Logo</a>
+			<a href="#">
+			  <h4>Awesome<span>logo</span></h4>
+			</a>
 		  </div>
 	  
-		  <!-- Collect the nav links, forms, and other content for toggling -->
-		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-			  <li class="pull-left"><a href="#">Dashboard</a></li>
-			  <li class="active"><a href="#">Stories</a></li>
-			  <li><a href="#">Videos</a></li>
-			  <li><a href="#">Photos</a></li>
-			  <li class="social pull-right"><a href="#">Social Links</a></li>
+		  <div class="navbar-menu" id="open-navbar1">
+			<ul class="navbar-nav">
+			  <li class="active"><a href="#">Home</a></li>
+			  <li class="navbar-dropdown">
+				<a href="#" class="dropdown-toggler" data-dropdown="my-dropdown-id">
+				  Categories <i class="fa fa-angle-down"></i>
+				</a>
+				<ul class="dropdown" id="my-dropdown-id">
+				  <li><a href="#">Actions</a></li>
+				  <li><a href="#">Something else here</a></li>
+				  <li class="separator"></li>
+				  <li><a href="#">Seprated link</a></li>
+				  <li class="separator"></li>
+				  <li><a href="#">One more seprated link.</a></li>
+				</ul>
+			  </li>
+			  <li class="navbar-dropdown">
+				<a href="#" class="dropdown-toggler" data-dropdown="blog">
+				  Blog <i class="fa fa-angle-down"></i>
+				</a>
+				<ul class="dropdown" id="blog">
+				  <li><a href="#">Some category</a></li>
+				  <li><a href="#">Some another category</a></li>
+				  <li class="separator"></li>
+				  <li><a href="#">Seprated link</a></li>
+				  <li class="separator"></li>
+				  <li><a href="#">One more seprated link.</a></li>
+				</ul>
+			  </li>
+			  <li><a href="#">About</a></li>
+			  <li><a href="#">Contact</a></li>
+			  <li><a href="#">Signin</a></li>
 			</ul>
-		  </div><!-- /.navbar-collapse -->
-		</div><!-- /.container-fluid -->
+		  </div>
+		</div>
 	  </nav>
+	
 <div class="container-xl">
 	<div class="row">
 		<div class="col-md-8 mx-auto">
