@@ -43,7 +43,6 @@ body {
     text-align: center;
   }
   .navbar-nav > li {
-    float: none;
     display: inline-block;
   }
   
