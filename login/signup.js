@@ -67,10 +67,10 @@ $('.form').find('input, textarea').on('keyup blur focus', function (e) {
   const analytics = getAnalytics(app);
   const auth = getAuth()
 
-  var firstname = document.getElementById("firstname")
-  var lastname = document.getElementById("lastname")
-  var email = document.getElementById("email")
-  var password = document.getElementById("password")
+  var firstname = document.getElementById("firstname");
+  var lastname = document.getElementById("lastname");
+  var email = document.getElementById("email");
+  var password = document.getElementById("password");
 
   window.signup = function(e){
     var obj = {

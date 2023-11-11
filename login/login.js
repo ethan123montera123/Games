@@ -22,5 +22,23 @@
   const analytics = getAnalytics(app);
   const auth = getAuth()
 
-  var email = document.getElementById("email")
-  var password = document.getElementById("password")
+  var email = document.getElementById("email");
+  var password = document.getElementById("password");
+
+  function login(e){
+    e.preventDefault();
+    var obj = {
+        emil:email.value,
+        password:password.value,
+    };
+    signINWithEmailAndPassword(auth, obj.emil, obj.password)
+    .then(function(success){
+        console.log(user.uid)
+        alert("Log in Successfully")
+    })
+    .catch(function(err)
+    {
+        alert("login Error" + err)
+    })
+    console.log(obj)
+  }
