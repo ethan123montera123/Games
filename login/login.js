@@ -25,7 +25,7 @@
   var email = document.getElementById("email");
   var password = document.getElementById("password");
 
-  function login(e){
+    window.login = function(e){
     e.preventDefault();
     var obj = {
         emil:email.value,
