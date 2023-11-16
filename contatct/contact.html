@@ -1,106 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Contact Us | Games</title>
-<link rel="stylesheet" href="contact.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-    emailjs.init('jUQDE_dlABvpcAawZ')
-</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contact Us | Games</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('jUQDE_dlABvpcAawZ')
+    </script>
 </head>
+
 <body>
-	<nav class="navbar">
-		<div class="container">
-	  
-		  <div class="navbar-header">
-			<button class="navbar-toggler" data-toggle="open-navbar1">
+    <nav class="navbar">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button class="navbar-toggler" data-toggle="open-navbar1">
 			  <span></span>
 			  <span></span>
 			  <span></span>
 			</button>
-			<a href="#">
-			  <h4>Awesome<span>logo</span></h4>
-			</a>
-		  </div>
-	  
-		  <div class="navbar-menu" id="open-navbar1">
-			<ul class="navbar-nav">
-			  <li class="active"><a href="#">Home</a></li>
-			  <li class="navbar-dropdown">
-				<a href="#" class="dropdown-toggler" data-dropdown="my-dropdown-id">
+                <a href="#">
+                    <h4>Awesome<span>logo</span></h4>
+                </a>
+            </div>
+
+            <div class="navbar-menu" id="open-navbar1">
+                <ul class="navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li class="navbar-dropdown">
+                        <a href="#" class="dropdown-toggler" data-dropdown="my-dropdown-id">
 				  Categories <i class="fa fa-angle-down"></i>
 				</a>
-				<ul class="dropdown" id="my-dropdown-id">
-				  <li><a href="#">Actions</a></li>
-				  <li><a href="#">Something else here</a></li>
-				  <li class="separator"></li>
-				  <li><a href="#">Seprated link</a></li>
-				  <li class="separator"></li>
-				  <li><a href="#">One more seprated link.</a></li>
-				</ul>
-			  </li>
-			  <li class="navbar-dropdown">
-				<a href="#" class="dropdown-toggler" data-dropdown="blog">
+                        <ul class="dropdown" id="my-dropdown-id">
+                            <li><a href="#">Actions</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="separator"></li>
+                            <li><a href="#">Seprated link</a></li>
+                            <li class="separator"></li>
+                            <li><a href="#">One more seprated link.</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar-dropdown">
+                        <a href="#" class="dropdown-toggler" data-dropdown="blog">
 				  Blog <i class="fa fa-angle-down"></i>
 				</a>
-				<ul class="dropdown" id="blog">
-				  <li><a href="#">Some category</a></li>
-				  <li><a href="#">Some another category</a></li>
-				  <li class="separator"></li>
-				  <li><a href="#">Seprated link</a></li>
-				  <li class="separator"></li>
-				  <li><a href="#">One more seprated link.</a></li>
-				</ul>
-			  </li>
-			  <li><a href="#">About</a></li>
-			  <li><a href="#">Contact</a></li>
-			  <li><a href="#">Signin</a></li>
-			</ul>
-		  </div>
-		</div>
-	  </nav>
-	
-<div class="container-xl">
-	<div class="row">
-		<div class="col-md-8 mx-auto">
-			<div class="contact-form">
-				<h1>Apexel Development</h1>
-				<p class="hint-text">We'd love to hear from you</p>
-				<form id="form">
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="form-group">
-								<label for="first">First Name</label>
-								<input type="text" class="form-control" id="fist" required>
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="form-group">
-								<label for="last">Last Name</label>
-								<input type="text" class="form-control" id="last" required>
-							</div>
-						</div>
-					</div>            
-					<div class="form-group">
-						<label for="email">Email Address</label>
-						<input type="email" class="form-control" id="email" required>
-					</div>
-					<div class="form-group">
-						<label for="message">Message</label>
-						<textarea class="form-control" id="message" rows="5" required></textarea>
-					</div>
-					<input type="submit" class="btn btn-primary" value="Send Email" id="button">
-				</form>
-			</div>
-		</div>
-	</div>
-</div>
+                        <ul class="dropdown" id="blog">
+                            <li><a href="#">Some category</a></li>
+                            <li><a href="#">Some another category</a></li>
+                            <li class="separator"></li>
+                            <li><a href="#">Seprated link</a></li>
+                            <li class="separator"></li>
+                            <li><a href="#">One more seprated link.</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Signin</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-xl">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div class="contact-form">
+                    <h1>Apexel Development</h1>
+                    <p class="hint-text">We'd love to hear from you</p>
+                    <form id="form">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="first">First Name</label>
+                                    <input type="text" class="form-control" id="fist" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="last">Last Name</label>
+                                    <input type="text" class="form-control" id="last" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <input type="submit" class="btn btn-primary" value="Send Email" id="button">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/contatct/app.js"></script>
+
 </body>
+
 </html>
