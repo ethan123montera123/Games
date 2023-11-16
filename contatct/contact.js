@@ -1,9 +1,9 @@
 function sendMail() {
     var params = {
-        name: document.getElementById("first").value,
-        name: document.getElementById("last").value,
-        name: document.getElementById("email").value,
-        name: document.getElementById("message").value,
+        first: document.getElementById("first").value,
+        last: document.getElementById("last").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value,
     };
 
     const serviceID = "service_9i6b9do";
