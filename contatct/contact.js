@@ -1,6 +1,9 @@
 function sendMail() {
     var params = {
-        name: document.getElementById("email").value,
+        first: document.getElementById("first").value,
+        last: document.getElementById("last").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value,
     };
 
     const serviceID = "service_9i6b9do";
@@ -9,7 +12,10 @@ function sendMail() {
     emailjs
         .send(serviceID, templateID, params)
         .then((res) => {
+            document.getElementById("first").value = "";
+            document.getElementById("last").value = "";
             document.getElementById("email").value = "";
+            document.getElementById("message").value = "";
 
             console.log(res);
             alert("Your Message was Sent Successfully");
