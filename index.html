@@ -22,12 +22,12 @@
 
             <ul class="main-menu">
                 <li><a href="#home">HOME</a></li>
-                <select name="Games" id="Games">
+                <select name="Games" id="Games" onchange="goToSection()">
                     <option value="Select"><a href="">Games</a></option>
-                    <option value="tictactoe"><a href="facebook.com">Tic - Tac - Toe</a></option>
-                    <option value="titris">tetris</option>
-                    <option value="stick-hero">stick - hero</option>
-                    <option value="lava">lava</option>
+                    <option value="tictactoe"><a href="#tic">Tic - Tac - Toe</a></option>
+                    <option value="titris"><a href="#tetris">Tetris</a></option>
+                    <option value="stick-hero"><a href="#stick">Stick - Hero</a></option>
+                    <option value="lava"><a href="#lava">Lava Game</a></option>
                 </select>
                 <li><a href="#">ABOUT</a></li>
                 <li><a href="/contatct/contact.html">CONTACT</a></li>
@@ -52,22 +52,22 @@
 
         <!-- Home cards 1 -->
         <section class="home-cards" id="games">
-            <div>
+            <div id="tic">
                 <a href="/tic-tac-toe/tic.html">
                 <img src="/images/toe.png" alt="tic-tac-toe">
                 </a>
             </div>
-            <div>
+            <div id="tetris">
                 <a href="/tetris/tetris.html">
                 <img src="/images/tetris.png" alt=" " />
                 </a>
             </div>
-            <div>
+            <div id="stick">
                 <a href="/stick-hero/stick.html">
                 <img src="/images/stick.png" alt=" " />
                 </a>
             </div>
-            <div>
+            <div id="lava">
                 <a href="/mario/mario.html">
                 <img src="images/lava.png" alt=" " />
                 </a>
@@ -191,6 +191,22 @@
             </ul>
         </div>
     </footer>
+
+    <script>
+        function goToSection() {
+            // Get the selected value from the dropdown
+            var selectedValue = document.getElementById("Games").value;
+    
+            // Check if the selected value is not "Select"
+            if (selectedValue !== "Select") {
+                // Construct the section ID
+                var sectionId = selectedValue.toLowerCase();
+    
+                // Scroll to the corresponding section
+                document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
 
     <script src="app.js "></script>
 </body>
