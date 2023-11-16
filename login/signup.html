@@ -1,35 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webleb</title>
-</head>
-<body style="display:flex; align-items:center; justify-content:center;">
-<div class="login-page">
-  <div class="form">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login Here!</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
 
-    <form onsubmit="signup(event)" class="register-form">
-      <h2>Register</h2>
-      <input type="text" placeholder="Full Name *" id="firstname" required/>
-      <input type="text" placeholder="Last Name *" id="lastname" required/>
-      <input type="email" placeholder="Email *" id="email" required/>
-      <input type="password" placeholder="Password *" id="password" required/>
-      <button id="signup" value="signup">
-      <a class="btn" href="#">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Create
-      </a>
-    </button>
-      <p class="message">Already registered? <a href="#">Sign In</a></p>
-    </form>
-  </div>
-</div>
-<script src="sign.js" type="module"></script>
-</body>
+<form class="box" action="index.html" method="post">
+  <h1>Login</h1>
+  <input type="text" name="" placeholder="Username">
+  <input type="password" name="" placeholder="Password">
+  <input type="submit" name="" value="Login">
+</form>
+
+
+  </body>
 </html>
-
