@@ -669,7 +669,6 @@ a.button:focus {
 .bk-img .bk-cover {
     /*background-image: url(../images/1.png);*/
     background-repeat: no-repeat;
-    object-fit: cover;
     background-position: 10px 40px;
 }
 
