@@ -183,9 +183,13 @@ ul {
     width: 40%;
     padding: 50px 0 0 30px;
 }
+.review .content {
+    width: 40%;
+    padding: 50px 0 0 30px;
+}
 
 .xbox p,
-.carbon p {
+.review p {
     margin: 10px 0 20px;
 }
 
