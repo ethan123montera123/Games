@@ -49,22 +49,22 @@
         <section class="home-cards" id="games">
             <div id="tic">
                 <a href="/tic-tac-toe/tic.html">
-                <img src="/images/toe.png" alt="tic-tac-toe">
+                    <img src="/images/toe.png" alt="tic-tac-toe">
                 </a>
             </div>
             <div id="tetris">
                 <a href="/tetris/tetris.html">
-                <img src="/images/tetris.png" alt=" " />
+                    <img src="/images/tetris.png" alt=" " />
                 </a>
             </div>
             <div id="stick">
                 <a href="/stick-hero/stick.html">
-                <img src="/images/stick.png" alt=" " />
+                    <img src="/images/stick.png" alt=" " />
                 </a>
             </div>
             <div id="lava">
                 <a href="/mario/mario.html">
-                <img src="images/lava.png" alt=" " />
+                    <img src="images/lava.png" alt=" " />
                 </a>
             </div>
         </section>
@@ -131,14 +131,15 @@
         <section class="home-cards ">
             <div>
                 <a href="/documents/5th Edition.pdf">
-                <img src="https://i5.walmartimages.com/seo/Saunders-Comprehensive-Review-for-NCLEX-RN-Saunders-Comprehensive-Review-for-the-Nclex-Rn-r-Examination-Edition-5-Paperback-9781437708257_c7066385-9ae6-4a5b-a111-f3f8b1d4ab6f.5e9f1a3e817ad42a0cc063a3a340e790.jpeg" alt=" " />
+                    <img src="https://i5.walmartimages.com/seo/Saunders-Comprehensive-Review-for-NCLEX-RN-Saunders-Comprehensive-Review-for-the-Nclex-Rn-r-Examination-Edition-5-Paperback-9781437708257_c7066385-9ae6-4a5b-a111-f3f8b1d4ab6f.5e9f1a3e817ad42a0cc063a3a340e790.jpeg"
+                        alt=" " />
                 </a>
                 <h3>5th Edition NCLEX - Review Examination</h3>
                 <a href="" download="5th Edition.pdf">Download<i class="fas fa-chevron-right "></i></a>
             </div>
             <div>
                 <a href="/documents/7th Edition.pdf">
-                <img src="https://m.media-amazon.com/images/I/51s268OobSL._AC_UF1000,1000_QL80_.jpg" alt=" " />
+                    <img src="https://m.media-amazon.com/images/I/51s268OobSL._AC_UF1000,1000_QL80_.jpg" alt=" " />
                 </a>
                 <h3>7th Edition NCLEX - Review Examination</h3>
 
@@ -146,19 +147,19 @@
             </div>
             <div>
                 <a href="/documents/8th Edition.pdf">
-                <img src="https://ph-test-11.slatic.net/p/dee8a4e8cc473fdeca6c28db85c1fbea.png" alt=" " style="height: 332px;" />
+                    <img src="https://ph-test-11.slatic.net/p/dee8a4e8cc473fdeca6c28db85c1fbea.png" alt=" " style="height: 332px;" />
                 </a>
                 <h3>8th Edition NCLEX - Review Examination</h3>
 
                 <a href="" download="8th Edition.pdf">Download<i class="fas fa-chevron-right "></i></a>
             </div>
             <div>
-                <a href="">
-                <img src="https://lzd-img-global.slatic.net/g/ot/common/0f9e08dee2a24552a716a9be2932e377.jpeg_720x720q80.jpg" alt=" " />
+                <a href="/documents/9th Edition.pdf">
+                    <img src="https://lzd-img-global.slatic.net/g/ot/common/0f9e08dee2a24552a716a9be2932e377.jpeg_720x720q80.jpg" alt=" " />
                 </a>
                 <h3>9th Edition NCLEX - Review Examination</h3>
 
-                <a href="">Download<i class="fas fa-chevron-right "></i></a>
+                <a href="" download="9th Edition.pdf">Download<i class="fas fa-chevron-right "></i></a>
             </div>
         </section>
 
@@ -176,7 +177,7 @@
             </a>
         </section>
     </div>
-    
+
 
     <!-- Footer -->
     <footer class="footer ">
@@ -195,14 +196,16 @@
         function goToSection() {
             // Get the selected value from the dropdown
             var selectedValue = document.getElementById("Games").value;
-    
+
             // Check if the selected value is not "Select"
             if (selectedValue !== "Select") {
                 // Construct the div ID
                 var divId = selectedValue.toLowerCase();
-    
+
                 // Scroll to the corresponding div
-                document.getElementById(divId).scrollIntoView({ behavior: 'smooth' });
+                document.getElementById(divId).scrollIntoView({
+                    behavior: 'smooth'
+                });
             }
         }
     </script>
